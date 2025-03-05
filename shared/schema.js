@@ -21,15 +21,3 @@ export const reportSchema = z.object({
   createdAt: z.string()
 });
 
-export const reportSchema = z.object({
-  id: z.string(),
-  userId: z.string(),
-  type: z.enum(["crime", "accident", "lost_property"]),
-  title: z.string(),
-  description: z.string(),
-  location: z.string(),
-  date: z.string(),
-  status: z.enum(["submitted", "in_review", "investigating", "resolved", "closed"]),
-  attachments: z.array(z.string()),
-  createdAt: z.string()
-});
