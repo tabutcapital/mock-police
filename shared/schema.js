@@ -20,3 +20,4 @@ export const reportSchema = z.object({
   attachments: z.array(z.string()),
   createdAt: z.string()
 });
+
